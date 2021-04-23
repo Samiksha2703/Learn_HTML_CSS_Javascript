@@ -1,0 +1,79 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #main {
+        display: flex;
+        flex: 1;
+    }
+
+    #main>article {
+        flex: 1;
+        order: 1;
+    }
+
+    #main>nav,
+    #main>aside {
+        flex: 0 0 20vw;
+    }
+
+    #main>nav {
+        background: #D7E8D4;
+        order: 3;
+    }
+
+    #main>aside {
+        background: beige;
+        order: 2;
+    }
+
+    header,
+    footer {
+        background: yellowgreen;
+        height: 20vh;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+        padding: 1em;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Food</h1>
+    </header>
+    <div id="main">
+        <article>
+            <h2>Pizza</h2>is a savory dish of Italian origin consisting of a usually round, flattened base of leavened
+            wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at
+            a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.
+        </article>
+        <nav>
+            <h2>Biryani</h2>Biryani is a mixed rice dish with its origins among the Muslims of the Indian subcontinent.
+            It is made with Indian spices, rice, and meat, or vegetables and sometimes, in addition, eggs and/or
+            potatoes in certain regional varieties. Biryani is popular throughout the Indian subcontinent, as well as
+            among its diaspora.
+        </nav>
+        <aside>
+            <h2>Noodles</h2>Noodles are a type of food made from unleavened dough which is rolled flat and cut,
+            stretched or extruded, into long strips or strings. Noodles can be refrigerated for short-term storage or
+            dried and stored for future use. Noodles are usually cooked in boiling water, sometimes with cooking oil or
+            salt added.
+        </aside>
+    </div>
+    <footer>Footer</footer>
+</body>
